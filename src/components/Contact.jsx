@@ -1,7 +1,15 @@
 const Contact = () => {
   return (
-    <div>
+    <section id="contact">
       <h1>Contact</h1>
-    </div>
+      <p>Feel free to reach out to me at:</p>
+      <ul>
+        <li>Email: tbell3393@gmail.com</li>
+        <li>Github: https://github.com/Pravus696</li>
+        <li>LinkedIn: https://www.linkedin.com/in/trevor-bell-897228132/</li>
+      </ul>
+    </section>
   );
 };
+
+export default Contact;
