@@ -26,15 +26,16 @@ const App = () => {
     return (
         <div>
             <h1>My Portfolio</h1>
-            <nav>
+            <nav class='nav'>
                 <button onClick={() => setActiveTab('About')}>About</button>
                 <button onClick={() => setActiveTab('Contact')}>Contact</button>
                 <button onClick={() => setActiveTab('Projects')}>Projects</button>
                 <button onClick={() => setActiveTab('Resume')}>Resume</button>
+                
             </nav>
-            <div>
+            <main>
                 {renderContent()}
-            </div>
+            </main>
         </div>
     );
 };

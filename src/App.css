@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #646cff;
+    --hover-color: #535bf2;
+    --shadow-color: #646cffaa;
+    --react-shadow-color: #61dafbaa;
+    --background-color: #8a8a8a;
+    --nav-color: #283593;
+    --text-color: #213547;
+    --segment-bg-color: #f0f0f0;
+    --segment-border-color: #ddd;
+    --segment-text-color: #333;
+    --highlight-bg-color: #e0e0e0;
+  }
+  
+  #about h2 {
+    border: 2px solid #283593; /* Medium thickness border */
+    padding: 0.5rem;           /* Space between text and border */
+    display: inline-block;     /* Fit the border around the text */
+    border-radius: 8px;        /* Rounded corners for a softer look */
+  }
+  
+  
+  body.light-theme {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --nav-color: #283593;
+    --segment-bg-color: #333333;
+    --segment-text-color: #000000;
+  }
+  
+  body.dark-theme {
+    --background-color: #242424;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --nav-color: #283593;
+    --segment-bg-color: #333333;
+    --segment-text-color: #f0f0f0;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .nav {
+    background-color: var(--nav-color);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Space between links and button */
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1; /* Ensure links take up available space */
+    list-style: none;
+    margin-left: 25%;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem; /* Space between nav links */
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  
+  .nav a:hover {
+    color: var(--hover-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .theme-toggle {
+    margin-left: auto;
+  }
+  
+  main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 4em;
+    padding: 1em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em var(--shadow-color));
+  }
+  
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em var(--react-shadow-color));
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    margin: 1rem 0;
+    border: #535bf2;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: var(--segment-bg-color);
+    background-size: cover;
+    background-position: center;
+    color: var(--segment-text-color);
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .card img {
+    display: none;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  .about-segment {
+    background-color: var(--highlight-bg-color);
+    border: 1px solid var(--segment-border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: var(--segment-text-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-segment p:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  body.dark-theme .about-segment {
+    background-color: #333333;
+    color: #f0f0f0;
+  }
+  
+  body.dark-theme .projects-segment {
+    background-color: #333333;
+    color: #f0f0f0;
+  }
+  
+  /* Tablet and larger screens */
+  @media (min-width: 600px) {
+    .nav-links {
+      justify-content: center;
+    }
+  
+    .card {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .card h3, .card p, .card a {
+      text-align: left;
+    }
+  
+    main {
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Desktop and larger screens */
+  @media (min-width: 1024px) {
+    .about-segment {
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+  }
