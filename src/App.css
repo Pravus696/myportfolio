@@ -1,3 +1,16 @@
+:root {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: #2B0504;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    --background-color: #010001;
+    --btn-border-color: #BC5F04;
+    --text-color: #874000;
+    /* tbd-color2: #F4442E; */
+
+  }
 /* :root {
     --primary-color: #9659f8;
     --hover-color: #aa53f2;

@@ -5,8 +5,8 @@ const Background = () => {
       <h3>Education:</h3>
       <div>
         <ol>
-        <li>High School Diploma - 2014</li>
-        <li>Full Stack Web Development Bootcamp - 2024</li>
+          <li>High School Diploma - 2014</li>
+          <li>Full Stack Web Development Bootcamp - 2024</li>
         </ol>
       </div>
       <div>
@@ -25,16 +25,19 @@ const Background = () => {
       <div>
         <h3>Professional Experience:</h3>
         <p>
-            I began working at a factory in 2014. I started as a general laborer 
-            for various different companies while building up my work experience.
-            I started working at Amazon in 2018 and worked my way up to a supervisor position. 
-            I managed a team of 80 associates and was responsible for ensuring that production 
-            goals were met. I also worked closely with the quality control department to ensure 
-            that all products met company standards. I have experience operating various factory 
-            machines and am proficient in Microsoft Suite. I am a quick learner and have excellent 
-            written and communication skills. I am also able to multi-task and manage large workloads. 
-            I am currently enrolled in a Full Stack Web Development Bootcamp to further my skills 
-            and knowledge in coding languages. I am excited to continue learning and growing in my career.
+          I began working at a factory in 2014. I started as a general laborer
+          for various different companies while building up my work experience.
+          I started working at Amazon in 2018 and worked my way up to a
+          supervisor position. I managed a team of 80 associates and was
+          responsible for ensuring that production goals were met. I also worked
+          closely with the quality control department to ensure that all
+          products met company standards. I have experience operating various
+          factory machines and am proficient in Microsoft Suite. I am a quick
+          learner and have excellent written and communication skills. I am also
+          able to multi-task and manage large workloads. I am currently enrolled
+          in a Full Stack Web Development Bootcamp to further my skills and
+          knowledge in coding languages. I am excited to continue learning and
+          growing in my career.
         </p>
       </div>
     </div>

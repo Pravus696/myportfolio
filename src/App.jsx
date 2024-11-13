@@ -4,12 +4,24 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Background from './components/Background';
+import { useEffect } from 'react';
 
 const App = () => {
     const [activeTab, setActiveTab] = useState('About');
 
+    useEffect(() => {
+        setActiveTab('Home');
+    }, []);
     const renderContent = () => {
         switch (activeTab) {
+            case 'Home':
+            return (
+                <section>
+                    <h2>My name is Trevor Bell</h2>
+                    <p>Welcome to my portfolio!</p>
+                    <p>Feel free to click around and learn more about me.</p>
+                </section>
+            );
             case 'About':
                 return <About />;
             case 'Contact':
