@@ -1,5 +1,5 @@
 const About = () => {
-  <section id="about">
+  return (<section>
     <h2>About Me:</h2>
     <div>
       <h3>Introduction:</h3>
@@ -46,7 +46,7 @@ const About = () => {
         of how machines and technology works around me.
       </p>
     </div>
-  </section>;
+  </section>);
 };
 
 export default About;

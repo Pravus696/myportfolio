@@ -1,5 +1,5 @@
 const Projects = () => {
-  <section id="projects">
+  return (<section id="projects">
     <h2>Projects</h2>
     <div className="projects-list">
       <div className="card" style={{ backgroundImage: "url(/project1.jpg)" }}>
@@ -35,7 +35,7 @@ const Projects = () => {
         <a href="https://github.com/Pravus696/uvgs">View Project</a>
       </div>
     </div>
-  </section>;
+  </section>);
 };
 
 export default Projects;
