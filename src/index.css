@@ -1,27 +1,17 @@
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-  
+    background-color: #2B0504;
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-  
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    --background-color: #010001;
+    --btn-border-color: #BC5F04;
+    --text-color: #874000;
+    /* tbd-color2: #F4442E; */
+
   }
-  
-  a {
-    font-weight: 500;
-    color: #8f28a8;
-    text-decoration: inherit;
-  }
-  a:hover {
-    color: #802497;
-  }
-  
+
   body {
     margin: 0;
     display: flex;
@@ -29,7 +19,60 @@
     min-width: 320px;
     min-height: 100vh;
   }
-  .card {
+
+  #header {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+   #header h1 {
+    font-size: 3.2em;
+    line-height: 1;
+    text-align: center;
+   }
+
+   nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em;
+    background-color: #2B0504;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #F4442E;
+    cursor: pointer;
+    transition: var(--btn-border-color) 0.25s;
+  }
+  button:hover {
+    border: 3px solid var(--btn-border-color);
+  }
+  button:focus,
+  button:focus-visible {
+    border: 3px solid var(--btn-border-color);
+  }
+
+  /* a {
+    font-weight: 500;
+    color: #8f28a8;
+    text-decoration: inherit;
+  } */
+  /* a:hover {
+    color: #802497;
+  } */
+  
+  /* .card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,41 +83,37 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     background-color: #8a8a8a;
-  }
+  } */
   
-  h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-  }
   
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-  }
-  button:hover {
-    border-color: #802497;
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
-  
-  @media (prefers-color-scheme: light) {
-    :root {
-      color: #8f28a8;
-      background-color: #ffffff;
+  @media (max-width: 768px) {
+    #header h1 {
+      font-size: 2.4em;
     }
-    a:hover {
-      color: #802497;
+
+    nav {
+      flex-direction: column;
+      padding: 1em;
     }
+
     button {
-      background-color: #f9f9f9;
+      width: 100%;
+      padding: 0.8em;
     }
   }
+
+  @media (max-width: 480px) {
+    #header h1 {
+      font-size: 1.8em;
+    }
+
+    nav {
+      padding: 0.5em;
+    }
+
+    button {
+      font-size: 0.8em;
+      padding: 0.6em;
+    }
+  }
+

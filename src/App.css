@@ -1,8 +1,8 @@
-:root {
-    --primary-color: #646cff;
-    --hover-color: #535bf2;
-    --shadow-color: #646cffaa;
-    --react-shadow-color: #61dafbaa;
+/* :root {
+    --primary-color: #9659f8;
+    --hover-color: #aa53f2;
+    --shadow-color: #a024f3aa;
+    --react-shadow-color: #d965f7aa;
     --background-color: #8a8a8a;
     --nav-color: #283593;
     --text-color: #213547;
@@ -10,33 +10,23 @@
     --segment-border-color: #ddd;
     --segment-text-color: #333;
     --highlight-bg-color: #e0e0e0;
-  }
+  } */
   
-  #about h2 {
-    border: 2px solid #283593; /* Medium thickness border */
-    padding: 0.5rem;           /* Space between text and border */
-    display: inline-block;     /* Fit the border around the text */
-    border-radius: 8px;        /* Rounded corners for a softer look */
-  }
+  /* #about h2 {
+    border: 2px solid #283593; /* Medium thickness border 
+    padding: 0.5rem;           /* Space between text and border 
+    display: inline-block;     /* Fit the border around the text 
+    border-radius: 8px;        /* Rounded corners for a softer look 
+  } */
+
+  /* #about h3 {
+    border: 2px solid #283593; /* Medium thickness border 
+    padding: 0.5rem;           /* Space between text and border 
+    display: inline-block;     /* Fit the border around the text 
+    border-radius: 8px;        /* Rounded corners for a softer look 
+  } */
   
-  
-  body.light-theme {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --nav-color: #283593;
-    --segment-bg-color: #333333;
-    --segment-text-color: #000000;
-  }
-  
-  body.dark-theme {
-    --background-color: #242424;
-    --text-color: rgba(255, 255, 255, 0.87);
-    --nav-color: #283593;
-    --segment-bg-color: #333333;
-    --segment-text-color: #f0f0f0;
-  }
-  
-  * {
+  /* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -55,34 +45,34 @@
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
-  }
+  } */
   
-  .nav {
+  /* .nav {
     background-color: var(--nav-color);
     color: white;
     padding: 0.5rem;
     text-align: center;
     display: flex;
-    justify-content: space-between; /* Space between links and button */
+    justify-content: space-between; /* Space between links and button 
     align-items: center;
     border-radius: 12px;
     margin-top: 10px;
-  }
+  } */
   
-  .nav-links {
+  /* .nav-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-grow: 1; /* Ensure links take up available space */
+    flex-grow: 1; /* Ensure links take up available space 
     list-style: none;
     margin-left: 25%;
-  }
+  } */
   
-  .nav-links li {
-    margin: 0 1rem; /* Space between nav links */
-  }
+  /* .nav-links li {
+    margin: 0 1rem; /* Space between nav links 
+  } */
   
-  .nav a {
+  /* .nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -103,30 +93,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .logo {
-    height: 4em;
-    padding: 1em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  
-  .logo:hover {
-    filter: drop-shadow(0 0 2em var(--shadow-color));
-  }
-  
-  .logo.react:hover {
-    filter: drop-shadow(0 0 2em var(--react-shadow-color));
-  }
-  
-  @keyframes logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
   }
   
   @media (prefers-reduced-motion: no-preference) {
@@ -185,10 +151,10 @@
   body.dark-theme .projects-segment {
     background-color: #333333;
     color: #f0f0f0;
-  }
+  } */
   
   /* Tablet and larger screens */
-  @media (min-width: 600px) {
+  /* @media (min-width: 600px) {
     .nav-links {
       justify-content: center;
     }
@@ -206,12 +172,12 @@
       align-items: center;
       margin: 0 auto;
     }
-  }
+  } */
   
   /* Desktop and larger screens */
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) {
     .about-segment {
       margin: 2rem auto;
       max-width: 800px;
     }
-  }
+  } */

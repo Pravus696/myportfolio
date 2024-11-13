@@ -24,9 +24,9 @@ const App = () => {
     };
 
     return (
-        <div>
+        <section id="header">
             <h1>My Portfolio</h1>
-            <nav class='nav'>
+            <nav>
                 <button onClick={() => setActiveTab('About')}>About</button>
                 <button onClick={() => setActiveTab('Contact')}>Contact</button>
                 <button onClick={() => setActiveTab('Projects')}>Projects</button>
@@ -36,7 +36,7 @@ const App = () => {
             <main>
                 {renderContent()}
             </main>
-        </div>
+        </section>
     );
 };
 

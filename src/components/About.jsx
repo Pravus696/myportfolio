@@ -1,7 +1,8 @@
 const About = () => {
-  return (<section>
+  return (
+  <section id="about">
     <h2>About Me:</h2>
-    <div>
+    <div class="about-segment">
       <h3>Introduction:</h3>
       <p>
         My name is Trevor Bell. I&apos;m currently a student through UoW/edX,
@@ -9,7 +10,7 @@ const About = () => {
         development
       </p>
     </div>
-    <div >
+    <div class="about-segment">
       <h3>Background:</h3>
       <p>
         I&apos;ve always had an interest in computers/coding, and primarily self
@@ -18,7 +19,7 @@ const About = () => {
         coding to allow me to turn my hobby into a professional pursuit.
       </p>
     </div>
-    <div >
+    <div class="about-segment">
       <h3>Passion:</h3>
       <p>
         I am driven by my desire to learn as much as I can about computers and
@@ -27,7 +28,7 @@ const About = () => {
         easier living to various communities.
       </p>
     </div>
-    <div >
+    <div class="about-segment">
       <h3>Hobbies:</h3>
       <p>
         In my free time, I enjoy playing video games with my friends, spending
@@ -37,7 +38,7 @@ const About = () => {
         to bring me ideas for creations that I would like to do in the future.
       </p>
     </div>
-    <div >
+    <div class="about-segment">
       <h3>Personal Insight:</h3>
       <p>
         Struggling with my mental health in early stages of my life had brought
