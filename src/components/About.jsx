@@ -1,8 +1,8 @@
 const About = () => {
   return (
     <section id="about">
-      <h2>About Me:</h2>
       <img src="src\assets\mycatsavatar.jpg" alt="Developer Cat Avatar" />
+      <h2>About Me:</h2>
       <div class="about-segment">
         <h3>Introduction:</h3>
         <p>
