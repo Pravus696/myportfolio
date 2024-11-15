@@ -2,8 +2,8 @@ const Projects = () => {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <div class="projects-list">
-        <div class="card" style={{ backgroundImage: "url(/project1.jpg)" }}>
+      <div>
+        <div class="project-segment" style={{ backgroundImage: "url(/project1.jpg)" }}>
           <h3>Professional README Generator</h3>
           <p>
             This project is one of my earlier works. It allows for an easy
@@ -14,7 +14,7 @@ const Projects = () => {
             View Project
           </a>
         </div>
-        <div class="card" style={{ backgroundImage: "url(/project2.jpg)" }}>
+        <div class="project-segment" style={{ backgroundImage: "url(/project2.jpg)" }}>
           <h3>Build Your Own Vehicle</h3>
           <p>
             This project allows a user to create and operate a vehicle within
@@ -26,7 +26,7 @@ const Projects = () => {
             View Project
           </a>
         </div>
-        <div class="card" style={{ backgroundImage: "url(/project3.jpg)" }}>
+        <div class="project-segment" style={{ backgroundImage: "url(/project3.jpg)" }}>
           <h3>Ultimate Video Game Suggestions</h3>
           <p>
             This was the first group project that I had worked on in our coding
