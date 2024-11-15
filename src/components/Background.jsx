@@ -1,17 +1,17 @@
 const Background = () => {
   return (
-    <div>
-      <h1>Background</h1>
-      <h3>Education:</h3>
-      <div>
-        <ol>
+    <section id="background">
+      <h2>Background</h2>
+      <div class="background-segment">
+        <h3>Education:</h3>
+        <ul>
           <li>High School Diploma - 2014</li>
           <li>Full Stack Web Development Bootcamp - 2024</li>
-        </ol>
+        </ul>
       </div>
-      <div>
+      <div class="background-segment">
         <h3>Skills & Qualifications:</h3>
-        <ol>
+        <ul>
           <li>Various factory machines</li>
           <li>Microsoft Suite</li>
           <li>Effective written and communication skills</li>
@@ -20,9 +20,9 @@ const Background = () => {
           <li>Multi-task and managing large workloads</li>
           <li>Labor management</li>
           <li>Basics of coding languages</li>
-        </ol>
+        </ul>
       </div>
-      <div>
+      <div class="background-segment">
         <h3>Professional Experience:</h3>
         <p>
           I began working at a factory in 2014. I started as a general laborer
@@ -40,7 +40,7 @@ const Background = () => {
           growing in my career.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

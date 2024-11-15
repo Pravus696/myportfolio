@@ -33,7 +33,7 @@ ul {
   list-style-type: none;
 }
 
-#about {
+#about, #background {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,23 +47,25 @@ ul {
   max-height: 20cm;
 }
 
-#about h2 {
+#about h2, #background h2 {
   flex: 2;
   border: 2px solid var(--btn-border-color); /* Medium thickness border */
   padding: 0.5rem; /* Space between text and border */
   display: inline-block; /* Fit the border around the text */
   border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: var(--btn-color2) 0 0 10px;
 }
 
-#about h3 {
+#about h3, #background h3 {
   flex: 2;
   border: 2px solid var(--btn-border-color); /* Medium thickness border */
   padding: 0.5rem; /* Space between text and border */
   display: inline-block; /* Fit the border around the text */
   border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: var(--btn-color2) 0 0 10px;
 }
 
-.about-segment {
+.about-segment, .background-segment {
   flex: 2;
   background-color: var(--background-color);
   border: 2px solid var(--background-color2);
@@ -74,9 +76,10 @@ ul {
   font-size: 1.1rem;
   line-height: 1.6;
   width: 90%;
+  box-shadow: var(--background-color2) 0 0 20px;
 }
 
-.about-segment p:first-child {
+.about-segment p:first-child, .background-segment p:first-child {
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -94,12 +97,9 @@ ul {
   margin: 0 auto; /* This will center the section horizontally */
 }
 
-/*  #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-  } */
+.background-segment ul {
+  text-align: center;
+}
 
 /* .nav {
     background-color: var(--nav-color);
@@ -136,10 +136,6 @@ ul {
   .nav a:hover {
     color: var(--hover-color);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .theme-toggle {
-    margin-left: auto;
   }
   
   main {
