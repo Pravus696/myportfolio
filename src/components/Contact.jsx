@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <section id="contact">
-      <h1>Contact</h1>
+      <h2>Contact</h2>
       <p>Feel free to reach out to me at:</p>
       <ul>
         <li>Email: tbell3393@gmail.com</li>
