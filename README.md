@@ -2,10 +2,7 @@
 
 ## Description
 
--What was your motivation?
--Why did you build this project?
--What problem does it solve?
--What did you learn?
+My motivation was to create a portfolio that could be used to show potentional employeers to see my skills with react. I built this project to test my capabilities with using react to create a web browser. This allows potential employeers to see my skill set with coding, and offers easy to navigate examples of what I'm capable of doing. I learned different ways to shape and color my webpage to create a themed enviornment.
 
 ## Installation
 
